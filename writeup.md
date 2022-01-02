@@ -1,4 +1,5 @@
 # Writeup: Track 3D-Objects Over Time
+[image1]: ./img/ID_S1_EX1.png
 
 Please use this starter template to answer the following questions:  
 In this project, we used the [Waymo Open Dataset](https://waymo.com/open/terms)'s real-world data with 3d point cloud library for lidar based object detection.  
@@ -14,7 +15,7 @@ In this project, we used the [Waymo Open Dataset](https://waymo.com/open/terms)'
 ```
 python loop_over_dataset.py
 ```
-
+![][image1]
 ### 1. Write a short recap of the four tracking steps and what you implemented there (filter, track management, association, camera fusion). Which results did you achieve? Which part of the project was most difficult for you to complete, and why?
 
 
