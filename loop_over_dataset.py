@@ -58,7 +58,7 @@ show_only_frames = [0, 1]
 ## Prepare Waymo Open Dataset file for loading
 data_fullpath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'dataset', data_filename) # adjustable path in case this script is called from another working directory
 model = "darknet"
-sequence = "3"
+sequence = "1"
 results_fullpath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'results/' + model + '/results_sequence_' + sequence + '_' + model)
 datafile = WaymoDataFileReader(data_fullpath)
 datafile_iter = iter(datafile)  # initialize dataset iterator
@@ -82,30 +82,30 @@ np.random.seed(10) # make random values predictable
 
 ## Selective execution and visualization
 exec_detection = ['bev_from_pcl', 'detect_objects', 'validate_object_labels', 'measure_detection_performance'] # options are 'bev_from_pcl', 'detect_objects', 'validate_object_labels', 'measure_detection_performance'; options not in the list will be loaded from file
-##----ID_S1_EX1----
+## ID_S1_EX1 settings
 exec_data = []
 exec_detection = []
 exec_tracking = [] # options are 'perform_tracking'
 exec_visualization = ['show_range_image'] # options are 'show_range_image', 'show_bev', 'show_pcl', 'show_labels_in_image', 'show_objects_and_labels_in_bev', 'show_objects_in_bev_labels_in_camera', 'show_tracks', 'show_detection_performance', 'make_tracking_movie'
-##----ID_S1_EX2----
+## ID_S1_EX2 settings
 # exec_data = []
 # exec_detection = []
 # exec_tracking = []
 # exec_visualization = ['show_pcl']
 
-##----ID_S2_EX1, ID_S2_EX2, & ID_S2_EX3----
+## ID_S2_EX1, ID_S2_EX2, & ID_S2_EX3 settings
 # exec_data = ['pcl_from_rangeimage']
 # exec_detection = ['bev_from_pcl'] 
 # exec_tracking = [] 
 # exec_visualization=[]
 
-##----ID_S3_EX1 & ID_S3_EX2----
+## ID_S3_EX1 & ID_S3_EX2 settings
 # exec_data = ['pcl_from_rangeimage', 'load_image']
 # exec_detection = ['bev_from_pcl', 'detect_objects']
 # exec_tracking = []
 # exec_visualization = ['show_objects_in_bev_labels_in_camera']
 
-##----ID_S4_EX1,ID_S4_EX3----
+## ID_S4_EX1,ID_S4_EX3 settings
 # exec_data = ['pcl_from_rangeimage']
 # exec_detection = ['bev_from_pcl', 'detect_objects', 'validate_object_labels', 'measure_detection_performance']
 # exec_tracking = []
