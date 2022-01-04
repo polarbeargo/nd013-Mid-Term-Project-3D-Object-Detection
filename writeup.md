@@ -1,6 +1,10 @@
 # Writeup: Track 3D-Objects Over Time
 [image1]: ./img/ID_S1_EX1.png
 [image2]: ./img/S1_EX1Settings.png
+[image3]: ./img/code1.png
+[image4]: ./img/S1_EX1s.png
+[image5]: ./img/S1_EX1_sample.png  
+
 Please use this starter template to answer the following questions:  
 In this project, we used the [Waymo Open Dataset](https://waymo.com/open/terms)'s real-world data with 3d point cloud library for lidar based object detection.  
 - In the Waymo Open dataset, lidar data is stored as a range image. Therefore, this task is about extracting two of the data channels within the range image, which are "range" and "intensity", and convert the floating-point data to an 8-bit integer value range then display the range /intensity image (ID_S1_EX1) use the OpenCV library to stack the range and intensity image vertically and visualize it.
@@ -17,6 +21,12 @@ python loop_over_dataset.py
 ```
 ![][image1]
 ![][image2]
+
+The function show_range_image located in the file `student/objdet_pcl.py`.
+![][image3]  
+The result range images:  
+![][image4]
+![][image5] 
 ### 1. Write a short recap of the four tracking steps and what you implemented there (filter, track management, association, camera fusion). Which results did you achieve? Which part of the project was most difficult for you to complete, and why?
 
 
