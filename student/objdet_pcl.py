@@ -15,7 +15,7 @@ import cv2
 import numpy as np
 import torch
 import zlib
-
+import open3d as o3d
 # add project directory to python path to enable relative imports
 import os
 import sys
@@ -41,9 +41,9 @@ def show_pcl(pcl):
     # step 1 : initialize open3d with key callback and create window
     
     # step 2 : create instance of open3d point-cloud class
-
+    pcd = o3d.geometry.PointCloud()
     # step 3 : set points in pcd instance by converting the point-cloud into 3d vectors (using open3d function Vector3dVector)
-
+    pcd.points = o3d.utility.Vector3dVector(pcl)
     # step 4 : for the first frame, add the pcd instance to visualization using add_geometry; for all other frames, use update_geometry instead
     
     # step 5 : visualize point cloud and keep window open until right-arrow is pressed (key-code 262)
