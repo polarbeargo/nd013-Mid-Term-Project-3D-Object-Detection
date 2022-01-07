@@ -61,7 +61,42 @@ def load_configs_model(model_name='darknet', configs=None):
         ####### ID_S3_EX1-3 START #######     
         #######
         print("student task ID_S3_EX1-3")
+        configs = edict(vars(parser.parse_args()))
+        configs.pin_memory = True
+        configs.distributed = False  # For testing on 1 GPU only
+        configs.saved_fn = 'fpn_resnet'
+        configs.pretrained_path = '../checkpoints/fpn_resnet_18/fpn_resnet_18_epoch_300.pth'
+        configs.input_size = (608, 608)
+        configs.hm_size = (152, 152)
+        configs.down_ratio = 4
+        configs.max_objects = 50
 
+        configs.imagenet_pretrained = False
+        configs.head_conv = 64
+        configs.num_classes = 3
+        configs.num_center_offset = 2
+        configs.num_z = 1
+        configs.num_dim = 3
+        configs.num_direction = 2  # sin, cos
+
+        configs.heads = {
+            'hm_cen': configs.num_classes,
+            'cen_offset': configs.num_center_offset,
+            'direction': configs.num_direction,
+            'z_coor': configs.num_z,
+            'dim': configs.num_dim
+        }
+        configs.num_input_features = 4
+
+    ####################################################################
+    ##############Dataset, Checkpoints, and results dir configs#########
+    ####################################################################
+        configs.root_dir = '../'
+        configs.dataset_dir = os.path.join(configs.root_dir, 'dataset', 'kitti')
+
+        if configs.save_test_output:
+            configs.results_dir = os.path.join(configs.root_dir, 'results', configs.saved_fn)
+            make_folder(configs.results_dir)
         #######
         ####### ID_S3_EX1-3 END #######     
 
