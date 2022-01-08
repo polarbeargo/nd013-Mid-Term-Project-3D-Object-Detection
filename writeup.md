@@ -3,9 +3,13 @@
 [image2]: ./img/S1_EX1Settings.png
 [image3]: ./img/code1.png
 [image4]: ./img/S1_EX1s.png
-[image5]: ./img/ 
+[image5]: ./img/ID_S1_EX2setting.png
 [image6]: ./img/S1_EX1s2.png
 [image7]: ./img/S1_EX1s3.png
+[image8]: ./img/ID_s4Settings.png
+[image9]: ./img/ID_S3Setting.png
+[image10]: ./img/ID_S2setting.png
+
 
 Please use this starter template to answer the following questions:  
 In this project, we used the [Waymo Open Dataset](https://waymo.com/open/terms)'s real-world data with 3d point cloud library for lidar based object detection.  
@@ -30,6 +34,10 @@ The result range images:
 ![][image4]
 ![][image6]
 ![][image7] 
+![][image5] 
+![][image8] 
+![][image9] 
+![][image10] 
 ### 1. Write a short recap of the four tracking steps and what you implemented there (filter, track management, association, camera fusion). Which results did you achieve? Which part of the project was most difficult for you to complete, and why?
 
 
