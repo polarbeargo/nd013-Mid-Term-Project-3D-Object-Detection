@@ -39,7 +39,9 @@ def show_pcl(pcl):
     print("student task ID_S1_EX2")
 
     # step 1 : initialize open3d with key callback and create window
-    
+    initializeWithKeyCallback = o3d.visualization.VisualizerWithKeyCallback()
+    initializeWithKeyCallback.create_window(window_name='Open3D', width=1280, height=1080, left=50, top=50, visible=True)
+    initializeWithKeyCallback.register_key_callback(262,ronClick)
     # step 2 : create instance of open3d point-cloud class
     pcd = o3d.geometry.PointCloud()
     # step 3 : set points in pcd instance by converting the point-cloud into 3d vectors (using open3d function Vector3dVector)
