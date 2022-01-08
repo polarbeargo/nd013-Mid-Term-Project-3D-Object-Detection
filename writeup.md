@@ -9,7 +9,11 @@
 [image8]: ./img/ID_s4Settings.png
 [image9]: ./img/ID_S3Setting.png
 [image10]: ./img/ID_S2setting.png
-
+[image11]: ./img/show_pcl.png
+[image12]: ./img/ID_S1_EX2.png
+[image13]: ./img/Open3D3.png
+[image14]: ./img/Open3D1.png
+[image15]: ./img/Open3D4.png
 
 Please use this starter template to answer the following questions:  
 In this project, we used the [Waymo Open Dataset](https://waymo.com/open/terms)'s real-world data with 3d point cloud library for lidar based object detection.  
@@ -34,7 +38,13 @@ The result range images:
 ![][image4]
 ![][image6]
 ![][image7] 
-![][image5] 
+![][image12]
+![][image5]
+![][image11]
+![][image15]
+![][image14]
+![][image13]
+
 ![][image8] 
 ![][image9] 
 ![][image10] 
