@@ -21,6 +21,9 @@
 [image20]: ./img/intensity.png
 [image21]: ./img/intensityBEV.png
 [image22]: ./img/heightBEV.png
+[image23]: ./img/ID_S3Settings.png
+[image24]: ./img/labelsVSDetected.png
+[image25]: ./img/labelsVSDetected2.png
 
 Please use this starter template to answer the following questions:  
 In this project, we used the [Waymo Open Dataset](https://waymo.com/open/terms)'s real-world data with 3d point cloud library for lidar based object detection.  
@@ -63,7 +66,13 @@ The result range images:
 | ------------- | ------------- |
 | ![][image19]  | ![][image21] |  
 
-![][image9]
+![][image23]
+![][image9]  
+
+| labels VS Detected 1 | labels VS Detected 2 |
+| ------------- | ------------- |
+| ![][image24]  | ![][image25] |   
+
 ![][image8] 
  
 
