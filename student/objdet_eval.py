@@ -117,19 +117,25 @@ def compute_performance_stats(det_performance_all):
         ious.append(item[0])
         center_devs.append(item[1])
         pos_negs.append(item[2])
-    
+    pos_negs_arr = np.asarray(pos_negs)
+        
     ####### ID_S4_EX3 START #######     
     #######    
     print('student task ID_S4_EX3')
 
     ## step 1 : extract the total number of positives, true positives, false negatives and false positives
+    positives = sum(pos_negs_arr[:,0])
+    true_positives = sum(pos_negs_arr[:,1])
+    false_negatives = sum(pos_negs_arr[:,2])
+    false_positives = sum(pos_negs_arr[:,3])
+    print("TP = " + str(true_positives) + ", FP = " + str(false_positives) + ", FN = " + str(false_negatives))
     
     ## step 2 : compute precision
-    precision = 0.0
-
+    precision = true_positives / (true_positives + false_positives) # When an object is detected, what are the chances of it being real?   
+    
     ## step 3 : compute recall 
-    recall = 0.0
-
+    recall = true_positives / float(true_positives + false_negatives) # What are the chances of a real object being detected?
+    
     #######    
     ####### ID_S4_EX3 END #######     
     print('precision = ' + str(precision) + ", recall = " + str(recall))   
