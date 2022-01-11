@@ -68,7 +68,7 @@ In this part, we use the Open3D library to display the lidar point-cloud in a 3d
 * Normalize the heatmap of each BEV. Plotting intensity values from the BEV map  
 #### The changes in the settings are:  
 ![][image17] 
-![][image10] 
+![][image10]   
 The function bev_from_pcl located in the file `student/objdet_pcl.py`. 
 ![][image16] 
 * BEV
