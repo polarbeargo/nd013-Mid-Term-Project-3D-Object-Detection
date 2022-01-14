@@ -58,6 +58,7 @@ def show_pcl(pcl):
 
     vis.register_key_callback(262,exit_key)
     vis.poll_events()
+    #vis.run()  # Comment this out in order to go through multiple frames for detection without having to press all the time.
     #######
     ####### ID_S1_EX2 END #######     
        
