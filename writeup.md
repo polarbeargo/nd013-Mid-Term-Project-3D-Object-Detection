@@ -24,6 +24,19 @@
 [image23]: ./img/ID_S3Settings.png
 [image24]: ./img/labelsVSDetected.png
 [image25]: ./img/labelsVSDetected2.png
+[image26]: ./img/pcl.png
+[image27]: ./img/pcl1.png
+[image28]: ./img/pcl2.png
+[image29]: ./img/pcl3.png
+[image30]: ./img/pcl4.png
+[image31]: ./img/pcl5.png
+[image32]: ./img/pcl6.png
+[image33]: ./img/pcl7.png
+[image34]: ./img/pcl8.png
+[image35]: ./img/pcl9.png
+[image36]: ./img/pcl10.png
+[image37]: ./img/pcl11.png
+
 
 Please use this starter template to answer the following questions:  
 In this project, we used the [Waymo Open Dataset](https://waymo.com/open/terms)'s real-world data with 3d point cloud library for lidar based object detection.  
@@ -58,10 +71,24 @@ In this part, we use the Open3D library to display the lidar point-cloud in a 3d
 ![][image12]
 ![][image5]
 ![][image11]
+
 * Point cloud images:  
 ![][image15]
 ![][image14]
 ![][image13]  
+![][image26]
+![][image27]
+![][image28]
+![][image29]
+![][image30]
+![][image31]
+![][image32]
+![][image33]
+![][image34]
+![][image35]
+![][image36]
+![][image37]  
+
 ### Project Instructions Step 2 : Create Birds-Eye View from Lidar PCL  
 * Create Birds-Eye View (BEV) from Lidar PCL based on the (x,y)-coordinates in sensor space.
 * Compute the respective coordinates within the BEV coordinate space in subsequent tasks and map lidar intensity values to BEV.
