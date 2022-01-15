@@ -56,7 +56,7 @@ def measure_detection_performance(detections, labels, labels_valid, min_iou=0.5)
             for detection in detections:
                 ## step 3 : extract the four corners of the current detection
                 class_id, x, y,z, _h, w, l, yaw = detection
-                detection_corners = tools.compute_box_corners(x, y, w, l, yaw)
+                detection_corners = tools.compute_box_corners(x, y, w, l, 0) # yaw set to 0 because not realy used
                 
                 ## step 4 : computer the center distance between label and detection bounding-box in x, y, and z
                 distance = np.array([label_box.center_x, label_box.center_y, label_box.center_z]) - np.array([x, y, z])
@@ -71,7 +71,7 @@ def measure_detection_performance(detections, labels, labels_valid, min_iou=0.5)
                 
                 ## step 6 : if IOU exceeds min_iou threshold, store [iou,dist_x, dist_y, dist_z] in matches_lab_det and increase the TP count
                 if iou > min_iou:
-                    dist_x, dist_y, dist_z = dist
+                    dist_x, dist_y, dist_z = distance
                     matches_lab_det.append([iou,dist_x, dist_y, dist_z ])
             #######
             ####### ID_S4_EX1 END #######     
