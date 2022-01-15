@@ -40,7 +40,7 @@
 [image39]: ./img/ID_S4_EX2.png
 [image40]: ./img/ID_S4_ex3code.png
 [image41]: ./img/modelBasedDetection.png
-[image42]: ./img/modelBasedDetection.png
+[image42]: ./img/groundtruthLabelsAsObjects.png
 
 
 Please use this starter template to answer the following questions:  
@@ -134,13 +134,15 @@ The function bev_from_pcl located in the file `student/objdet_pcl.py`.
 ![][image38]  
 ![][image39]  
 ![][image40]  
+### Model Based Detection  
 ![][image41]  
 TP = 289, FP = 15, FN = 17
 precision = 0.9506578947368421, recall = 0.9444444444444444  
  
 ```
 configs_det.use_labels_as_objects = True 
-```    
+```   
+### Ground Truth Labels As Objects  
 ![][image42]   
 TP = 306, FP = 0, FN = 0
 precision = 1.0, recall = 1.0  
