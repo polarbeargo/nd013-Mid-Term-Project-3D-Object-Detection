@@ -88,7 +88,7 @@ In this part, we use the Open3D library to display the lidar point-cloud in a 3d
 ![][image35]
 ![][image36]
 ![][image37]  
-
+* The body of the car is the most identifiable include from the lidar point of view. These pictures are dissected with diverse settings and the rear lights and side mirror are the major steady components. other robust features include the taillights, the raised bumper majorly.  
 ### Project Instructions Step 2 : Create Birds-Eye View from Lidar PCL  
 * Create Birds-Eye View (BEV) from Lidar PCL based on the (x,y)-coordinates in sensor space.
 * Compute the respective coordinates within the BEV coordinate space in subsequent tasks and map lidar intensity values to BEV.
