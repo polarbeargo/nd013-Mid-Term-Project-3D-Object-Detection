@@ -78,20 +78,35 @@ In this part, we use the Open3D library to display the lidar point-cloud in a 3d
 ![][image11]
 
 * Point cloud images:  
-![][image15]
-![][image14]
+In the following image the body of the car is the most identifiable along with wind shield and bumper.
+![][image15]  
+In the following image the body of the car is the most identifiable along with side mirrors, wheels, mudguard and rear lights.
+![][image14]  
+In the following image the body of the car is the most identifiable along with wind shield, bumper, mudguard and side mirrors.
 ![][image13]  
-![][image26]
-![][image27]
-![][image28]
-![][image29]
-![][image30]
-![][image31]
-![][image32]
-![][image33]
-![][image34]
-![][image35]
-![][image36]
+In the following image the body of the car is the most identifiable along with wind shield, bumper, mudguard and side mirrors.
+![][image26]  
+In the following image the body of the car is the most identifiable along with side mirrors, wheels and wind shield.  
+![][image27]  
+In the following image the body of the car is the most identifiable along with side mirrors, wheels, bumper and wind shield.  
+![][image28]  
+In the following image the body of the car is the most identifiable along with side mirrors, wheels, bumper, mudguard, rear lights and wind shield.  
+![][image29]  
+In the following image the body of the car is the most identifiable along with bumper and wind shield.  
+![][image30]  
+In the following image the body of the car is the most identifiable along with wind shield and a bit side mirrors.  
+![][image31]  
+In the following image the body of the car is the most identifiable along with bumper and wind shield.  
+![][image32]  
+In the following image the body of the car is the most identifiable along with bumper, side mirrors and wind shield.  
+![][image33]  
+In the following image the body of the car is the most identifiable along with bumper and wind shield.   
+![][image34]  
+In the following image the body of the car is the most identifiable along with bumper, side mirrors and wind shield.    
+![][image35]  
+In the following image the body of the car is the most identifiable along with side mirrors, bumper and wind shield.     
+![][image36]  
+In the following image the body of the car is the most identifiable along with bumper and wind shield.  
 ![][image37]  
 * The body of the car is the most identifiable include from the lidar point of view. These pictures are dissected with diverse settings and the rear lights and side mirror are the major steady components. other robust features include the taillights, the raised bumper majorly.  
 ### Project Instructions Step 2 : Create Birds-Eye View from Lidar PCL  
